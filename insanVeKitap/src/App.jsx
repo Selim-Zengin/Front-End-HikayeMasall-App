@@ -8,8 +8,9 @@ import { Aaa } from "./components/Aaa";
 function App() {
   return (
     <>
+
       <Router>
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg fixed-top">
           <div className="container-fluid">
             <img
               src={resim}
@@ -21,7 +22,7 @@ function App() {
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link to="/" className="nav-link active navbar-font-size">
-                    Anasayfa
+                  <span className="navbar-text">Anasayfa</span>
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -35,7 +36,9 @@ function App() {
                   </a>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <a style={{
+                    color:"white"
+                  }}
                     className="nav-link dropdown-toggle navbar-font-size"
                     href="#"
                     role="button"
@@ -71,6 +74,8 @@ function App() {
           <Route path="/aaa" element={<Aaa />} />
         </Routes>
       </Router>
+    
+    
 
       <footer className="text-center py-3">
         <div className="container">
