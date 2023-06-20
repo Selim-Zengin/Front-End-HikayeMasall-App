@@ -24,6 +24,7 @@ export const Anasayfa = () => {
   };
   const handleHikayelerClick = () => {
     
+    
     const hikayelerSection = document.getElementById("enCokOkunanHikayeler");
     hikayelerSection.scrollIntoView({ behavior: "smooth" });
   };
