@@ -27,7 +27,7 @@ function App() {
                 </li>
                 <li className="nav-item">
                   <Link to="/aaa" className="nav-link navbar-font-size">
-                    Features
+                    Korku Hikayeleri
                   </Link>
                 </li>
                 <li className="nav-item">
