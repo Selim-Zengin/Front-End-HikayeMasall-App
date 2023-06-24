@@ -14,6 +14,15 @@ import { HayaletAvci } from "./components/HayaletAvci";
 import { MezarOtesi } from "./components/MezarOtesi";
 import { FabrikaHayalet } from "./components/FabrikaHayalet";
 import { DedeKorkut } from "./components/DedeKorkut";
+import { Segrek } from "./components/Segrek";
+import { Dumrul } from "./components/Dumrul";
+import { KanliKoca } from "./components/KanliKoca";
+import { Dirse } from "./components/Dirse";
+import { Salur } from "./components/Salur";
+import { Bamsi } from "./components/Bamsi";
+import { Uruz } from "./components/Uruz";
+import { Kazık } from "./components/Kazık";
+import { Emren } from "./components/Emren";
 
 function App() {
   return (
@@ -48,15 +57,14 @@ function App() {
                     Hikayeler
                   </a>
                   <ul className="dropdown-menu">
-
-                    <li >
+                    <li>
                       <Link
                         to="KorkuHikayeleri"
                         className="nav-link navbar-font-size"
                         style={{
                           fontSize: "18px",
                           color: "black",
-                          marginLeft:2,
+                          marginLeft: 2,
                         }}
                       >
                         Korku Hikayeleri
@@ -110,7 +118,16 @@ function App() {
           <Route path="/HayaletAvci" element={<HayaletAvci />} />
           <Route path="/MezarOtesi" element={<MezarOtesi />} />
           <Route path="/FabrikaHayalet" element={<FabrikaHayalet />} />
-          <Route path="/DedeKorkut" element={<DedeKorkut/>} />
+          <Route path="/DedeKorkut" element={<DedeKorkut />} />
+          <Route path="/Segrek" element={<Segrek />} />
+          <Route path="/Dumrul" element={<Dumrul />} />
+          <Route path="/KanliKoca" element={<KanliKoca />} />
+          <Route path="/Dirse" element={<Dirse />} />
+          <Route path="/Salur" element={<Salur />} />
+          <Route path="/Bamsi" element={<Bamsi />} />
+          <Route path="/Uruz" element={<Uruz />} />
+          <Route path="/Kazık" element={<Kazık/>}/>
+          <Route path="/Emren" element={<Emren/>}/>
         </Routes>
       </Router>
 

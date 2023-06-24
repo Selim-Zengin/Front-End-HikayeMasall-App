@@ -1,14 +1,13 @@
 import React from "react";
-import orman from "../images/orman.jpg";
-import mezar from "../images/mezarlık.jpg";
-import korkuEvi from "../images/korkuEvi.jpg";
-import karanlik from "../images/karanlik.jpg";
-import gizem from "../images/gizem.jpg";
-import hayalet from "../images/hayalet.jpg";
-import avci from "../images/avci.jpg";
-import cocuk1 from "../images/cocuk1 .jpg";
-import fabrika from "../images/fabrika.jpg";
 import segrek from "../images/segrek.jpg";
+import dumrul from "../images/deliDumrul.jpg";
+import kanli from "../images/kanli.jpg";
+import dirse from "../images/dirse.jpg";
+import salur from "../images/salur.jpg";
+import bamsi from "../images/bamsi.jpg";
+import uruz from "../images/uruz.jpg";
+import kazikli from "../images/kazikli.jpg";
+import emren from "../images/emren.jpg";
 
 export const DedeKorkut = () => {
   return (
@@ -36,6 +35,7 @@ export const DedeKorkut = () => {
           Popüler Olanlar
         </h1>
       </div>
+
       <div
         className="container text-center position-fixed"
         style={{
@@ -51,8 +51,8 @@ export const DedeKorkut = () => {
               <div className="card" style={{ width: "19rem", height: "9rem" }}>
                 <img src={segrek} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">Korku Evi</h5>
-                  <a href="/KorkuEv" className="btn btn-dark">
+                  <h5 className="card-title">Uşun Koca Oğlu Segrek</h5>
+                  <a href="/Segrek" className="btn btn-dark">
                     Hikayeyi Oku
                   </a>
                 </div>
@@ -63,11 +63,11 @@ export const DedeKorkut = () => {
           <div className="col" style={{ border: "3px solid #000000" }}>
             <div className="col" style={{ marginBottom: 159 }}>
               <div className="card" style={{ width: "19rem", height: "9rem" }}>
-                <img src={gizem} className="card-img-top" alt="..." />
+                <img src={salur} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">Gizemli Cığlık</h5>
+                  <h5 className="card-title">Salur Kazan’ın Çadırı</h5>
                   <a
-                    href="#"
+                    href="/Salur"
                     className="btn btn-dark"
                     style={{ marginTop: 15 }}
                   >
@@ -81,10 +81,10 @@ export const DedeKorkut = () => {
           <div className="col" style={{ border: "3px solid #000000" }}>
             <div className="col" style={{ marginBottom: 159 }}>
               <div className="card" style={{ width: "19rem", height: "9rem" }}>
-                <img src={fabrika} className="card-img-top" alt="..." />
+                <img src={bamsi} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">Fabrikadaki Hayalet</h5>
-                  <a href="#" className="btn btn-dark">
+                  <h5 className="card-title">Bamsı Beyrek</h5>
+                  <a href="/Bamsi" className="btn btn-dark">
                     Hikayeyi Oku
                   </a>
                 </div>
@@ -95,10 +95,10 @@ export const DedeKorkut = () => {
           <div className="col" style={{ border: "3px solid #000000" }}>
             <div className="col" style={{ marginBottom: 159 }}>
               <div className="card" style={{ width: "19rem", height: "9rem" }}>
-                <img src={karanlik} className="card-img-top" alt="..." />
+                <img src={dirse} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">Karanlıkta Tek Başına</h5>
-                  <a href="/KaranliktaTekBasina" className="btn btn-dark">
+                  <h5 className="card-title">Dirse Han’ın Oğlu Boğaç</h5>
+                  <a href="/Dirse" className="btn btn-dark">
                     Hikayeyi Oku
                   </a>
                 </div>
@@ -128,14 +128,12 @@ export const DedeKorkut = () => {
                 style={{ height: "12rem" }}
               />
               <div className="card-body">
-                <h3 className="card-title">
-                  Semanın Ormanda Korku Dolu Anları
-                </h3>
+                <h3 className="card-title">Uşun Koca Oğlu Segrek</h3>
                 <p className="card-text" style={{ textAlign: "center" }}>
-                  Bir varmış bir yokmuş çok tatlı bir kasabada şirin mi şirin
-                  şeker mi şeker bir kız çocuğu varmış. Bu çocuğun…
+                  Memleketin birinde Uşun Koca isimli bir adam ve bu adamında
+                  iki oğlu varmış. Adamın büyük olan oğlunun adı Egrek’miş. Bu…
                 </p>
-                <a href="/OrmanKorku" className="btn btn-dark">
+                <a href="/Segrek" className="btn btn-dark">
                   Hikayeyi Oku
                 </a>
               </div>
@@ -148,19 +146,19 @@ export const DedeKorkut = () => {
               style={{ width: "25rem", height: "28rem" }}
             >
               <img
-                src={mezar}
+                src={dumrul}
                 className="card-img-top"
                 alt="..."
                 style={{ height: "12rem" }}
               />
               <div className="card-body">
-                <h3 className="card-title">Mezarlıktaki Sesler</h3>
+                <h3 className="card-title">Deli Dumrul</h3>
                 <p className="card-text">
-                  Ezgi ve kardeşi Ömer, her hafta sonu yaptıkları gibi İngilizce
-                  kursuna doğru evden ayrılmışlardı. Ezgi 13 yaşında, kardeşi de
-                  10…
+                  Geçmiş zamanların birinde Deli Dumrul isimli bir adam
+                  yaşarmış. Bu adam yaşadığı yerde bulunan kuru bir çayın
+                  üzerine köprü yaptırmış…
                 </p>
-                <a href="/MezarSes" className="btn btn-dark">
+                <a href="/Dumrul" className="btn btn-dark">
                   Hikayeyi Oku
                 </a>
               </div>
@@ -172,19 +170,19 @@ export const DedeKorkut = () => {
               style={{ width: "25rem", height: "28rem" }}
             >
               <img
-                src={korkuEvi}
+                src={kanli}
                 className="card-img-top"
                 alt="..."
                 style={{ height: "12rem" }}
               />
               <div className="card-body">
-                <h3 className="card-title">Korku Evi</h3>
+                <h3 className="card-title">Kanlı Koca Oğlu Kanturalı</h3>
                 <p className="card-text">
-                  Esma, Gizem ve Metin hep birlikte Meral’e doğum günü hediyesi
-                  verebilmek için Meral’i “Korku Evi’ne” götürmeye karar
-                  vermişlerdi. Meral on…
+                  Oğuzlar arasında Kanlı Koca isimli birisi yaşarmış. Bu adamın
+                  Kanturalı isimli bir oğlu varmış. Kanlı Koca oğlunun
+                  evlenmesini istermiş. Oğluna…
                 </p>
-                <a href="/KorkuEv" className="btn btn-dark">
+                <a href="/KanliKoca" className="btn btn-dark">
                   Hikayeyi Oku
                 </a>
               </div>
@@ -196,20 +194,20 @@ export const DedeKorkut = () => {
               style={{ width: "25rem" }}
             >
               <img
-                src={karanlik}
+                src={dirse}
                 className="card-img-top"
                 alt="..."
                 style={{ height: "12rem" }}
               />
               <div className="card-body">
-                <h3 className="card-title">Karanlıkta Tek Başına</h3>
+                <h3 className="card-title">Dirse Han’ın Oğlu Boğaç</h3>
                 <p className="card-text">
-                  Sevda ve arkadaşı Cemre, bugün doğum günü olan Aslı’ya sürpriz
-                  bir doğum günü planı yapıyorlardı. Hafta sonu olduğu için
-                  bugün…
+                  Halkın hükümdarı olan Bayındır Han her yıl halkı için şölen
+                  düzenlermiş. Şölen zamanının geldiğini fark eden Bayındır Han
+                  yardımcılarına o…
                 </p>
                 <a
-                  href="/KaranliktaTekBasina"
+                  href="/Dirse"
                   className="btn btn-dark"
                   style={{ marginTop: 25 }}
                 >
@@ -224,121 +222,134 @@ export const DedeKorkut = () => {
               style={{ width: "25rem", height: "28rem" }}
             >
               <img
-                src={gizem}
+                src={salur}
                 className="card-img-top"
                 alt="..."
                 style={{ height: "12rem" }}
               />
               <div className="card-body">
-                <h3 className="card-title">Gizemli Çığlık</h3>
+                <h3 className="card-title">Salur Kazan’ın Çadırı</h3>
                 <p className="card-text">
-                  Yağmurlu bir gündü. Gökyüzü ikiye ayrılacak gibi gürlüyordu.
-                  Sokakta hiç kimse kalmamış, tüm çocuklar evlerine gitmişti.
-                  Bardaktan boşanırcasına yağan yağmur…
-                </p>
-                <a href="/GizemliCiglik" className="btn btn-dark">
-                  Hikayeyi Oku
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4  mt-5">
-            <div
-              className="card h-100 border-4 border-dark"
-              style={{ width: "25rem", height: "28rem" }}
-            >
-              <img
-                src={hayalet}
-                className="card-img-top"
-                alt="..."
-                style={{ height: "12rem" }}
-              />
-              <div className="card-body">
-                <h3 className="card-title">Hayaletli Ev – Tennesse Şeytanı</h3>
-                <p className="card-text">
-                  Çiftçi John Bell ve ailesi kasabanın dışında uzak bir eve
-                  taşınır. Eve taşındıkları andan itibaren ilginç olaylarla
-                  karşılaşırlar. Sanki kapıdan…
-                </p>
-                <a href="/HayaletEv" className="btn btn-dark">
-                  Hikayeyi Oku
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4  mt-5">
-            <div
-              className="card h-100 border-4 border-dark"
-              style={{ width: "25rem", height: "28rem" }}
-            >
-              <img
-                style={{ height: "12rem" }}
-                src={avci}
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h3 className="card-title">
-                  Hayalet Avcısı Harry Price – Tennesse Şeytanı
-                </h3>
-                <p className="card-text">
-                  Harry Prlce aslında bir psişik araştırmalar uzmanıdır.
-                  İngiltere’de bu uzmanın ismi bir bina ile birlikte anılır. Bu
-                  bina, İngiltere’nin tarihi…
-                </p>
-                <a href="/HayaletAvci" className="btn btn-dark">
-                  Hikayeyi Oku
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4  mt-5">
-            <div
-              className="card h-100 border-4 border-dark"
-              style={{ width: "25rem", height: "28rem" }}
-            >
-              <img
-                src={cocuk1}
-                className="card-img-top"
-                alt="..."
-                style={{ height: "12rem" }}
-              />
-              <div className="card-body">
-                <h3 className="card-title">Mezarın Ötesindeki Çocuklar</h3>
-                <p className="card-text">
-                  İngiltere’nin batı tarafında bulunan Devon bölgesinde, tam üç
-                  yüz yıl kadar eski bir çiftlik evi bulunuyordu. Bu çiftlik
-                  evinin sahibi…
-                </p>
-                <a href="/MezarOtesi" className="btn btn-dark">
-                  Hikayeyi Oku
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4  mt-5">
-            <div
-              className="card h-100 border-4 border-dark"
-              style={{ width: "25rem", height: "28rem" }}
-            >
-              <img
-                src={fabrika}
-                className="card-img-top"
-                alt="..."
-                style={{ height: "12rem" }}
-              />
-              <div className="card-body">
-                <h3 className="card-title">Fabrikadaki Hayalet</h3>
-                <p className="card-text">
-                  Moskova’nın 24 numaralı fabrikası, 1941 yılında ilginç bir
-                  hikâyeye konu oldu. 1912’de inşa edilen bu fabrikada, uçak
-                  motorlarının üretimi yapılıyordu.…
+                  Salur Kazan bir gün büyük bir şölene katılmış. Bu şölende çok
+                  eğlenmiş ve çok içki içmiş. Bu sebeple de sarhoş…
                 </p>
                 <a
-                  href="/FabrikaHayalet"
+                  href="/Salur"
+                  className="btn btn-dark"
+                  style={{ marginTop: 55 }}
+                >
+                  Hikayeyi Oku
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4  mt-5">
+            <div
+              className="card h-100 border-4 border-dark"
+              style={{ width: "25rem", height: "28rem" }}
+            >
+              <img
+                src={bamsi}
+                className="card-img-top"
+                alt="..."
+                style={{ height: "12rem" }}
+              />
+              <div className="card-body">
+                <h3 className="card-title">Bamsı Beyrek</h3>
+                <p className="card-text">
+                  Yörenin birinde Kam Büre oğlu Bamsı Beyrek ile Banıçiçek
+                  isimli iki kişi yaşarmış. Bunlar bebekken birbirlerine beşik
+                  kertmesi ilan edilmişler.…
+                </p>
+                <a
+                  href="/Bamsi"
+                  className="btn btn-dark"
+                  style={{ marginTop: 25 }}
+                >
+                  Hikayeyi Oku
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-4  mt-5">
+            <div
+              className="card h-100 border-4 border-dark"
+              style={{ width: "25rem", height: "28rem" }}
+            >
+              <img
+                style={{ height: "12rem" }}
+                src={uruz}
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <h3 className="card-title">Uruz’un Tutsak Olması</h3>
+                <p className="card-text">
+                  Eski zamanlarda bir yörenin hükümdarı olan Kazan Bey varmış.
+                  Kazan beyin ise Uruz isimli bir oğlu varmış. Kazan bey
+                  oğlunun…
+                </p>
+                <a
+                  href="/Uruz"
+                  className="btn btn-dark"
+                  style={{ marginTop: 45 }}
+                >
+                  Hikayeyi Oku
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-4  mt-5">
+            <div
+              className="card h-100 border-4 border-dark"
+              style={{ width: "25rem", height: "28rem" }}
+            >
+              <img
+                src={kazikli}
+                className="card-img-top"
+                alt="..."
+                style={{ height: "12rem" }}
+              />
+              <div className="card-body">
+                <h3 className="card-title">Kazılık Koca Oğlu Yegenek</h3>
+                <p className="card-text">
+                  Oğuzların hanı Bayındır Han’ın Kazılık Koca isminde bir veziri
+                  varmış. Kazılık Koca bir gün akın için hanından izin isteyerek
+                  Karadeniz’deki…
+                </p>
+                <a
+                  href="/Kazık"
+                  className="btn btn-dark"
+                  style={{ marginTop: 45 }}
+                >
+                  Hikayeyi Oku
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-4  mt-5">
+            <div
+              className="card h-100 border-4 border-dark"
+              style={{ width: "25rem", height: "28rem" }}
+            >
+              <img
+                src={emren}
+                className="card-img-top"
+                alt="..."
+                style={{ height: "12rem" }}
+              />
+              <div className="card-body">
+                <h3 className="card-title">Emren</h3>
+                <p className="card-text">
+                  Oğuzların hanı Bayındır Han emrindeki adamlardan Begin beyi
+                  sınırlarını koruması için görevlendirmiş. Ona ihtiyaç duyduğu
+                  kılıcı ve atı vermiş. Bunun…
+                </p>
+                <a
+                  href="/Emren"
                   className="btn btn-dark"
                   style={{ marginTop: 26 }}
                 >
@@ -356,22 +367,17 @@ export const DedeKorkut = () => {
         >
           <div className="card-body text-success " style={{ marginLeft: 100 }}>
             <h1 style={{ color: "black" }} className="card-title">
-              Korku Hikayesi Nedir
+              Dede Korkut Hikayeleri nedir
             </h1>
             <p
               style={{ fontSize: "30px", color: "black" }}
               className="card-text"
             >
-              Korku kurgu, korku edebiyatı ve korku fantezi bir edebiyat türüdür
-              ve okurlarına korku ve terör hissi vermeyi hedefler. Edebiyat
-              tarihçisi J. A. Cuddon, korku hikâyelerini farklı uzunluklarda bir
-              kurgu... okurlarını şaşırtıyor ve hatta korkutuyor, ya da belki de
-              onlara nefret ve tiksinme hislerini aşılıyor. sözleri ile
-              tanımlar.[1] Korku kurgu, genellikle tedirgin edici ve korkutucu
-              bir atmosfer yaratır ve yine genellikle doğaüstüdür ancak bu onun
-              her zaman doğaüstü olacağı anlamına da gelmez. Bir korku kurgu
-              çalışması genellikle toplumun genelinin korktuğu bir benzetme
-              olarak da tanımlanabilir.
+              Dede Korkut Kitabı, destansı Oğuz hikâyelerinin mecmuasıdır.
+              İçerdiği on iki hikâyenin büyük bölümü ilk defa X.-XI. yüzyıllar
+              arasında Oğuzların eski yurdu olan Seyhun nehri boylarında ortaya
+              çıkmış, XI. yüzyılda Oğuzlar'ın Kuzey İran, Güney Kafkasya ve
+              Anadolu'yu ele geçirmeleri ile Yakındoğu'ya gelmiştir.
             </p>
           </div>
         </div>
