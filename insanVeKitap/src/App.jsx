@@ -4,6 +4,16 @@ import "./App.css";
 import resim from "./images/logo.png";
 import { Anasayfa } from "./components/anasayfa";
 import { KorkuHikayeleri } from "./components/KorkuHikayeleri";
+import { OrmanKorku } from "./components/OrmanKorku";
+import { MezarSes } from "./components/MezarSes";
+import { KorkuEv } from "./components/KorkuEv";
+import { KaranliktaTekBasina } from "./components/KaranliktaTekBasina";
+import { GizemliCiglik } from "./components/GizemliCiglik";
+import { HayaletEv } from "./components/HayaletEv";
+import { HayaletAvci } from "./components/HayaletAvci";
+import { MezarOtesi } from "./components/MezarOtesi";
+import { FabrikaHayalet } from "./components/FabrikaHayalet";
+import { DedeKorkut } from "./components/DedeKorkut";
 
 function App() {
   return (
@@ -38,20 +48,33 @@ function App() {
                     Hikayeler
                   </a>
                   <ul className="dropdown-menu">
-                    <li className="dropdown-item">
+
+                    <li >
                       <Link
                         to="KorkuHikayeleri"
                         className="nav-link navbar-font-size"
-                        style={{ fontSize: "20px", color: "black" }}
+                        style={{
+                          fontSize: "18px",
+                          color: "black",
+                          marginLeft:2,
+                        }}
                       >
                         Korku Hikayeleri
                       </Link>
                     </li>
 
                     <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
+                      <Link
+                        to="DedeKorkut"
+                        className="nav-link navbar-font-size"
+                        style={{
+                          fontSize: "18px",
+                          color: "black",
+                          marginLeft: 2,
+                        }}
+                      >
+                        Dede Korkut Hikayeleri
+                      </Link>
                     </li>
                     <li>
                       <a className="dropdown-item" href="#">
@@ -60,7 +83,7 @@ function App() {
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item">
+                <li>
                   <Link className="nav-link navbar-font-size">Features</Link>
                 </li>
                 <li className="nav-item">
@@ -75,6 +98,19 @@ function App() {
         <Routes>
           <Route path="/" element={<Anasayfa />} />
           <Route path="/KorkuHikayeleri" element={<KorkuHikayeleri />} />
+          <Route path="/OrmanKorku" element={<OrmanKorku />} />
+          <Route path="/MezarSes" element={<MezarSes />} />
+          <Route path="/KorkuEv" element={<KorkuEv />} />
+          <Route
+            path="/KaranliktaTekBasina"
+            element={<KaranliktaTekBasina />}
+          />
+          <Route path="/GizemliCiglik" element={<GizemliCiglik />} />
+          <Route path="/HayaletEv" element={<HayaletEv />} />
+          <Route path="/HayaletAvci" element={<HayaletAvci />} />
+          <Route path="/MezarOtesi" element={<MezarOtesi />} />
+          <Route path="/FabrikaHayalet" element={<FabrikaHayalet />} />
+          <Route path="/DedeKorkut" element={<DedeKorkut/>} />
         </Routes>
       </Router>
 

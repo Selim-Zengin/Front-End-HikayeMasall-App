@@ -51,8 +51,8 @@ export const Anasayfa = () => {
       <br />
       <br />
       <br />
-      <div style={{ position: "fixed", left: "1320px",top:"263px" }}>
-        <h1>Popüler Olanlar</h1>
+      <div style={{ position: "fixed", left: "1325px",top:"263px"}}>
+        <h1 style={{color:"white",backgroundColor:"black",padding:7}}>Popüler Olanlar</h1>
       </div>
 
       <div style={{ width: "1590px", marginLeft: "185px" }}>
