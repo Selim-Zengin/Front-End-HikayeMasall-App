@@ -33,6 +33,16 @@ import { Ferhat } from "./components/Ferhat";
 import { Tahir } from "./components/Tahir";
 import { Hak } from "./components/Hak";
 import { Ozlem } from "./components/Ozlem";
+import { DunyKlasik } from "./components/DunyKlasik";
+import { Guzel } from "./components/Guzel";
+import { Bremen } from "./components/Bremen";
+import { Kul } from "./components/Kul";
+import { Pinokyo } from "./components/Pinokyo";
+import { Kirmizi } from "./components/Kirmizi";
+import { Hansel } from "./components/Hansel";
+import { Uyuyan } from "./components/Uyuyan";
+import { Cizmeli } from "./components/Cizmeli";
+import { Rapunzel } from "./components/Rapunzel";
 
 function App() {
   return (
@@ -95,7 +105,7 @@ function App() {
                       </Link>
                     </li>
                     <li>
-                    <Link
+                      <Link
                         to="AskHikaye"
                         className="nav-link navbar-font-size"
                         style={{
@@ -110,7 +120,9 @@ function App() {
                   </ul>
                 </li>
                 <li>
-                  <Link className="nav-link navbar-font-size">Features</Link>
+                  <Link to="DunyKlasik" className="nav-link navbar-font-size">
+                    Dünya Klasikleri
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link navbar-font-size" href="#">
@@ -144,18 +156,28 @@ function App() {
           <Route path="/Salur" element={<Salur />} />
           <Route path="/Bamsi" element={<Bamsi />} />
           <Route path="/Uruz" element={<Uruz />} />
-          <Route path="/Kazık" element={<Kazık/>}/>
-          <Route path="/Emren" element={<Emren/>}/>
-          <Route path="AskHikaye" element={<AskHikaye/>}/>
-          <Route path="/Romeo" element={<Romeo/>}/>
-          <Route path="/Ruh" element={<Ruh/>}/>
-          <Route path="/Kimi" element={<Kimi/>}/>
-          <Route path="/Kerem" element={<Kerem/>}/>
-          <Route path="/Leyla" element={<Leyla/>}/>
-          <Route path="/Ferhat"element={<Ferhat/>}/>
-          <Route path="/Tahir" element={<Tahir/>}/>
-          <Route path="/Hak" element={<Hak/>}/>
-          <Route path="/Ozlem" element={<Ozlem/>}/>
+          <Route path="/Kazık" element={<Kazık />} />
+          <Route path="/Emren" element={<Emren />} />
+          <Route path="AskHikaye" element={<AskHikaye />} />
+          <Route path="/Romeo" element={<Romeo />} />
+          <Route path="/Ruh" element={<Ruh />} />
+          <Route path="/Kimi" element={<Kimi />} />
+          <Route path="/Kerem" element={<Kerem />} />
+          <Route path="/Leyla" element={<Leyla />} />
+          <Route path="/Ferhat" element={<Ferhat />} />
+          <Route path="/Tahir" element={<Tahir />} />
+          <Route path="/Hak" element={<Hak />} />
+          <Route path="/Ozlem" element={<Ozlem />} />
+          <Route path="/DunyKlasik" element={<DunyKlasik />} />
+          <Route path="/Guzel" element={<Guzel />} />
+          <Route path="/Bremen" element={<Bremen />} />
+          <Route path="/Kul" element={<Kul />} />
+          <Route path="/Pinokyo" element={<Pinokyo />} />
+          <Route path="/Kirmizi" element={<Kirmizi />} />
+          <Route path="/Hansel" element={<Hansel/>}/>
+          <Route path="/Uyuyan" element={<Uyuyan/>}/>
+          <Route path="/Cizmeli" element={<Cizmeli/>}/>
+          <Route path="/Rapunzel" element={<Rapunzel/>}/>
         </Routes>
       </Router>
 
