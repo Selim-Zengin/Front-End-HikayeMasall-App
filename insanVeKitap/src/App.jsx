@@ -43,6 +43,16 @@ import { Hansel } from "./components/Hansel";
 import { Uyuyan } from "./components/Uyuyan";
 import { Cizmeli } from "./components/Cizmeli";
 import { Rapunzel } from "./components/Rapunzel";
+import { Masal } from "./components/Masal";
+import { Kendini } from "./components/Kendini";
+import { Yenilmez } from "./components/Yenilmez";
+import { Uzaydan } from "./components/Uzaydan";
+import { Uzayda } from "./components/Uzayda";
+import { Uykuya } from "./components/Uykuya";
+import { Tuccar } from "./components/Tuccar";
+import { Tembeller } from "./components/Tembeller";
+import { Sirin } from "./components/Sirin";
+import { Soz } from "./components/Soz";
 
 function App() {
   return (
@@ -125,8 +135,8 @@ function App() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link navbar-font-size" href="#">
-                    Pricing
+                  <a className="nav-link navbar-font-size" href="/Masal">
+                    Çocuk Masalları
                   </a>
                 </li>
               </ul>
@@ -178,6 +188,16 @@ function App() {
           <Route path="/Uyuyan" element={<Uyuyan/>}/>
           <Route path="/Cizmeli" element={<Cizmeli/>}/>
           <Route path="/Rapunzel" element={<Rapunzel/>}/>
+          <Route path="/Masal" element={<Masal/>}/>
+          <Route path="/Kendini" element={<Kendini/>}/>
+          <Route path="/Yenilmez" element={<Yenilmez/>}/>
+          <Route path="/Uzaydan" element={<Uzaydan/>}/>
+          <Route path="/Uzayda" element={<Uzayda/>}/>
+          <Route path="/Uykuya" element={<Uykuya/>}/>
+          <Route path="/Tuccar"element={<Tuccar/>}/>
+          <Route path="/Tembeller" element={<Tembeller/>}/>
+          <Route path="/Sirin" element={<Sirin/>}/>
+          <Route path="/Soz" element={<Soz/>}/>
         </Routes>
       </Router>
 
