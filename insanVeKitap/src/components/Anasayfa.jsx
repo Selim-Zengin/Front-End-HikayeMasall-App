@@ -1,10 +1,22 @@
 import React, { useState, useEffect } from "react";
-import resim from "../images/logo1.jpg";
 import korku from "../images/korku.jpg";
 import klasik from "../images/klasik1.jpg";
-import fikra from "../images/fikar.jpg";
 import cocuk from "../images/cocuk.jpg";
 import doga from "../images/doga2.jpg";
+import sliderLogo from "../images/sliderLogo.jpg";
+import dede from "../images/dede.jpg";
+import segrek from "../images/segrek.jpg";
+import kerem from "../images/kerem.jpg";
+import orman from "../images/orman.jpg";
+import leyla from "../images/leyla.jpg";
+import cizmeli from "../images/cizmeli.jpg";
+import kirmizi from "../images/kirmizi.jpg";
+import kul from "../images/kul.jpg";
+import pinokyo from "../images/pinokyo.jpg";
+import fabrika from "../images/fabrika.jpg";
+import korkuEvi from "../images/korkuEvi.jpg";
+import avci from "../images/avci.jpg";
+
 
 export const Anasayfa = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -81,14 +93,14 @@ export const Anasayfa = () => {
           >
             {[
               {
-                img: resim,
-                title: "İnsan Ve Kitap",
+                img: sliderLogo,
+                title: "",
                 description:
                   "En iyi hikayeleri, masalları vb burada bulabilirsiniz.",
               },
               { img: korku, title: "Korku Hikayeleri", description: "" },
               { img: klasik, title: "Dünya Klasikleri", description: "" },
-              { img: fikra, title: "Fıkra", description: "" },
+              { img: dede, title: "Dede Korkut Hikayeleri", description: "" },
               { img: cocuk, title: "Çocuk Masalları", description: "" },
               { img: doga, title: "İstediğiniz Yerde Okuyun", description: "" },
             ].map((item, index) => (
@@ -212,10 +224,10 @@ export const Anasayfa = () => {
           <div className="col" style={{ border: "3px solid #000000" }}>
             <div className="col" style={{ marginBottom: 159 }}>
               <div className="card" style={{ width: "19rem", height: "9rem" }}>
-                <img src={cocuk} className="card-img-top" alt="..." />
+                <img src={korkuEvi} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <a href="#" className="btn btn-dark">
+                  <h5 className="card-title">Korku Evi</h5>
+                  <a href="KorkuEv" className="btn btn-dark">
                     Hikayeyi Oku
                   </a>
                 </div>
@@ -226,10 +238,10 @@ export const Anasayfa = () => {
           <div className="col" style={{ border: "3px solid #000000" }}>
             <div className="col" style={{ marginBottom: 159 }}>
               <div className="card" style={{ width: "19rem", height: "9rem" }}>
-                <img src={cocuk} className="card-img-top" alt="..." />
+                <img src={kirmizi} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <a href="#" className="btn btn-dark">
+                  <h5 className="card-title">Kırmızı Başlıklı KıZ</h5>
+                  <a href="/Kirmizi" className="btn btn-dark">
                     Hikayeyi Oku
                   </a>
                 </div>
@@ -240,10 +252,10 @@ export const Anasayfa = () => {
           <div className="col" style={{ border: "3px solid #000000" }}>
             <div className="col" style={{ marginBottom: 159 }}>
               <div className="card" style={{ width: "19rem", height: "9rem" }}>
-                <img src={cocuk} className="card-img-top" alt="..." />
+                <img src={segrek} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <a href="#" className="btn btn-dark">
+                  <h5 className="card-title">Segrek</h5>
+                  <a href="/Segrek" className="btn btn-dark">
                     Hikayeyi Oku
                   </a>
                 </div>
@@ -254,10 +266,10 @@ export const Anasayfa = () => {
           <div className="col" style={{ border: "3px solid #000000" }}>
             <div className="col" style={{ marginBottom: 159 }}>
               <div className="card" style={{ width: "19rem", height: "9rem" }}>
-                <img src={cocuk} className="card-img-top" alt="..." />
+                <img src={kerem} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <a href="#" className="btn btn-dark">
+                  <h5 className="card-title">Kerem İle Aslı</h5>
+                  <a href="/Kerem" className="btn btn-dark">
                     Hikayeyi Oku
                   </a>
                 </div>
@@ -271,73 +283,69 @@ export const Anasayfa = () => {
         <div>
           <h1 style={{ marginLeft: "200px" }}>En Çok Okunan Hikayeler</h1>
           <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-            <img src={doga} className="card-img-top" alt="..." />
+            <img src={segrek} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Segrek</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the content.
+                
               </p>
               <a
-                href="#"
+                href="/Segrek"
                 className="btn"
                 style={{ background: "black", color: "white" }}
               >
-                Go somewhere
+                Hikayeyi Oku
               </a>
             </div>
           </div>
 
           <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-            <img src={doga} className="card-img-top" alt="..." />
+            <img src={kerem} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Kerem İle Aslı</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the content.
+               
               </p>
               <a
-                href="#"
+                href="/Kerem"
                 className="btn"
                 style={{ background: "black", color: "white" }}
               >
-                Go somewhere
+                Hikayeyi Oku
               </a>
             </div>
           </div>
 
           <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-            <img src={doga} className="card-img-top" alt="..." />
+            <img src={orman} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Semanın Ormanda Korku Dolu Anları</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the content.
+                
               </p>
               <a
-                href="#"
+                href="/OrmanKorku"
                 className="btn"
                 style={{ background: "black", color: "white" }}
               >
-                Go somewhere
+                Hikayeyi Oku
               </a>
             </div>
           </div>
 
           <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-            <img src={doga} className="card-img-top" alt="..." />
+            <img src={leyla} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Leyla İle Mecnun</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the content.
+                
               </p>
               <a
-                href="#"
+                href="/Leyla"
                 className="btn"
                 style={{ background: "black", color: "white" }}
               >
-                Go somewhere
+                Hikayeyi Oku
               </a>
             </div>
           </div>
@@ -354,74 +362,71 @@ export const Anasayfa = () => {
         <section id="enCokOkunanMasallar">
           <h1 style={{ marginLeft: "200px" }}>En Çok Okunan Çocuk Masalları</h1>
           <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-            <img src={doga} className="card-img-top" alt="..." />
+            <img src={pinokyo} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Pinokyo</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the content.
+                
               </p>
               <a
-                href="#"
+                href="/Pinokyo"
                 className="btn"
                 style={{ background: "black", color: "white" }}
               >
-                Go somewhere
+                Hikayeyi Oku
               </a>
             </div>
           </div>
         </section>
 
         <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-          <img src={doga} className="card-img-top" alt="..." />
+          <img src={kirmizi} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">Card title</h5>
+            <h5 className="card-title">Kırmızı Başlıklı Kız</h5>
             <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the content.
+             
             </p>
             <a
-              href="#"
+              href="Kirmizi"
               className="btn"
               style={{ background: "black", color: "white" }}
             >
-              Go somewhere
+              Hikayeyi Oku
             </a>
           </div>
         </div>
 
         <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-          <img src={doga} className="card-img-top" alt="..." />
+          <img src={kul} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">Card title</h5>
+            <h5 className="card-title">Kül Kedisi</h5>
             <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the content.
+              
+              
             </p>
             <a
-              href="#"
+              href="/Kul"
               className="btn"
               style={{ background: "black", color: "white" }}
             >
-              Go somewhere
+              Hikayeyi Oku
             </a>
           </div>
         </div>
 
         <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-          <img src={doga} className="card-img-top" alt="..." />
+          <img src={cizmeli} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">Card title</h5>
+            <h5 className="card-title">Çizmeli Kedi</h5>
             <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the content.
+              
             </p>
             <a
-              href="#"
+              href="/Cizmeli"
               className="btn"
               style={{ background: "black", color: "white" }}
             >
-              Go somewhere
+              Hikayeyi Oku
             </a>
           </div>
         </div>
@@ -439,73 +444,69 @@ export const Anasayfa = () => {
             En Çok Okunan Korku Hikayeleri
           </h1>
           <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-            <img src={doga} className="card-img-top" alt="..." />
+            <img src={orman} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Semanın Ormanda Korku Dolu Anları</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the content.
+                
               </p>
               <a
-                href="#"
+                href="/OrmanKorku"
                 className="btn"
                 style={{ background: "black", color: "white" }}
               >
-                Go somewhere
+                Hikayeyi Oku
               </a>
             </div>
           </div>
 
           <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-            <img src={doga} className="card-img-top" alt="..." />
+            <img src={fabrika} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Fabrikadaki Hayalet</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the content.
+                
               </p>
               <a
-                href="#"
+                href="/FabrikaHayalet"
                 className="btn"
                 style={{ background: "black", color: "white" }}
               >
-                Go somewhere
+                Hikayeyi Oku
               </a>
             </div>
           </div>
 
           <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-            <img src={doga} className="card-img-top" alt="..." />
+            <img src={korkuEvi} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Korku Evi</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the content.
+               
               </p>
               <a
-                href="#"
+                href="/KorkuEv"
                 className="btn"
                 style={{ background: "black", color: "white" }}
               >
-                Go somewhere
+                Hikayeyi Oku
               </a>
             </div>
           </div>
 
           <div className="card" style={{ marginLeft: "200px", width: "960px" }}>
-            <img src={doga} className="card-img-top" alt="..." />
+            <img src={avci} className="card-img-top" alt="..." style={{height:700}}/>
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Hayalet Avcısı Harry Price – Tennesse Şeytanı</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the content.
+                
               </p>
               <a
-                href="#"
+                href="/HayaletAvci"
                 className="btn"
                 style={{ background: "black", color: "white" }}
               >
-                Go somewhere
+                Hikayeyi Oku
               </a>
             </div>
           </div>

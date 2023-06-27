@@ -70,7 +70,7 @@ export const Kimi = () => {
           beslersin sevgilim diye küçük bir not da düşmüştü.
         </p>
       </div>
-      <div style={{ position: "fixed", left: "1463px", top: "180px" }}>
+      <div style={{ position: "fixed", left: "1423px", top: "250px" }}>
         <h1 style={{ color: "white", backgroundColor: "black", padding: 7 }}>
           Benzer Olanlar
         </h1>

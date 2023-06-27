@@ -53,6 +53,7 @@ import { Tuccar } from "./components/Tuccar";
 import { Tembeller } from "./components/Tembeller";
 import { Sirin } from "./components/Sirin";
 import { Soz } from "./components/Soz";
+import logo from "./images/logo.jpg";
 
 function App() {
   return (
@@ -61,7 +62,7 @@ function App() {
         <nav className="navbar navbar-expand-lg fixed-top">
           <div className="container-fluid">
             <img
-              src={resim}
+              src={logo}
               width="90"
               height="65"
               className="d-inline-block align-text-top"
